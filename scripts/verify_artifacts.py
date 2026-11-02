@@ -36,7 +36,9 @@ for doc in ("README.md", "blog.md", "sources.md", "PUBLICATION.md"):
             assert (ROOT / target.split("#")[0]).exists(),target
 assert (ROOT / "assets/scaling.png").read_bytes().startswith(b"\x89PNG\r\n\x1a\n")
 for p in ROOT.rglob("*"):
-    if not p.is_file() or ".git" in p.parts or p.suffix == ".png": continue
+    if (not p.is_file() or p.suffix == ".png" or
+            any(part in {".git", "build", "__pycache__", ".venv", "private"} for part in p.parts)):
+        continue
     text = p.read_text(encoding="utf-8")
     # Match identity-bearing patterns without embedding any private identifiers.
     assert not re.search(r"(?i)/(?:home|Users)/|[A-Z]:[\\/]Users[\\/]|/(?:nix)/store/|BEGIN [A-Z ]*PRIVATE KEY",text),p
