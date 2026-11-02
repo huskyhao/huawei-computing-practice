@@ -1,0 +1,3 @@
+mode	flags
+lse	-std=c++17 -O3 -mtune=tsv110 -mno-outline-atomics -fno-lto -pthread -Wall -Wextra -Werror -march=armv8.2-a
+llsc	-std=c++17 -O3 -mtune=tsv110 -mno-outline-atomics -fno-lto -pthread -Wall -Wextra -Werror -march=armv8-a
