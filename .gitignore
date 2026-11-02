@@ -1,0 +1,7 @@
+/build/
+**/__pycache__/
+/.venv/
+/private/
+/measurements/uptime-after.txt
+/measurements/binary-sha256.txt
+*.zip

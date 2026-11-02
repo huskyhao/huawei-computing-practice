@@ -1,0 +1,13 @@
+SELFTEST PASS checks=15480 patterns=3 lengths=0..257 offsets=0..3
+BENCH cpu=4 affinity_count=1 rounds=11 target_seconds=0.200
+CALIBRATE bytes=262144 variant=scalar reps=3921
+CALIBRATE bytes=262144 variant=auto_o2 reps=3935
+CALIBRATE bytes=262144 variant=auto_o3 reps=7824
+CALIBRATE bytes=262144 variant=auto_tuned reps=7846
+CALIBRATE bytes=262144 variant=neon4 reps=21482
+CALIBRATE bytes=268435456 variant=scalar reps=2
+CALIBRATE bytes=268435456 variant=auto_o2 reps=2
+CALIBRATE bytes=268435456 variant=auto_o3 reps=5
+CALIBRATE bytes=268435456 variant=auto_tuned reps=5
+CALIBRATE bytes=268435456 variant=neon4 reps=7
+BENCH PASS large_array_checks=10 batch_checks=all

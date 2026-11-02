@@ -1,0 +1,8 @@
+src/sum_plain.c:8:26: optimized: loop vectorized using 16 byte vectors
+src/sum_plain.c:6:10: note: vectorized 1 loops in function.
+src/sum_plain.c:9:13: note: ***** Analysis failed with vector mode V4SI
+src/sum_plain.c:9:13: note: ***** The result for vector mode V16QI would be the same
+src/sum_plain.c:9:13: note: ***** The result for vector mode V8QI would be the same
+src/sum_plain.c:9:13: note: ***** The result for vector mode V4HI would be the same
+src/sum_plain.c:9:13: note: ***** Re-trying analysis with vector mode V2SI
+src/sum_plain.c:9:13: note: ***** Analysis failed with vector mode V2SI

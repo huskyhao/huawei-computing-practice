@@ -1,0 +1,1 @@
+SELFTEST PASS checks=15480 patterns=3 lengths=0..257 offsets=0..3

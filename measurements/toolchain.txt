@@ -1,0 +1,14 @@
+Public extract: machine-specific Nix store paths and derivation removed.
+Compiler: GCC 14.3.0
+Python: 3.12.10
+GCC target: aarch64-unknown-linux-gnu
+
+O2 vectorization options
+  -ftree-loop-vectorize       		[enabled]
+  -ftree-slp-vectorize        		[enabled]
+  -fvect-cost-model=[unlimited|dynamic|cheap|very-cheap] 	very-cheap
+
+O3 vectorization options
+  -ftree-loop-vectorize       		[enabled]
+  -ftree-slp-vectorize        		[enabled]
+  -fvect-cost-model=[unlimited|dynamic|cheap|very-cheap] 	dynamic
