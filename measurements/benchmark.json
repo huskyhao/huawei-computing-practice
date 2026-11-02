@@ -1,0 +1,283 @@
+{
+  "created_at_utc": "2026-11-02T07:54:19.385680+00:00",
+  "python": "3.10.12",
+  "numpy": "1.24.0",
+  "soc_name": "Ascend310B1",
+  "configuration": {
+    "warmup": 50,
+    "repeats": 500,
+    "rounds": 3
+  },
+  "threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libopenblas",
+      "version": "0.3.21",
+      "threading_layer": "pthreads",
+      "architecture": "armv8"
+    }
+  ],
+  "batches": {
+    "1": {
+      "load_ms": 166.75566799995067,
+      "input_dims": {
+        "name": "input",
+        "dimCount": 2,
+        "dims": [
+          1,
+          64
+        ]
+      },
+      "output_dims": {
+        "name": "Add_4:0:logits",
+        "dimCount": 2,
+        "dims": [
+          1,
+          10
+        ]
+      },
+      "input_bytes": 256,
+      "output_bytes": 40,
+      "validation": {
+        "test_samples": 360,
+        "correct": 352,
+        "accuracy": 0.9777777777777777,
+        "numpy_prediction_agreement": 1.0,
+        "sklearn_prediction_agreement": 1.0,
+        "max_abs_logit_error": 0.03662109375,
+        "mean_abs_logit_error": 0.00613356825378206,
+        "relative_l2_logit_error": 0.0003713407831300321,
+        "prediction_disagreement_indices": []
+      },
+      "timing": {
+        "cpu_numpy_t1": {
+          "samples": 1500,
+          "median_us": 24.021,
+          "p95_us": 24.521,
+          "mean_us": 24.450664,
+          "serial_samples_per_second_from_mean": 40898.68479645379
+        },
+        "cpu_numpy_t4": {
+          "samples": 1500,
+          "median_us": 23.979,
+          "p95_us": 24.542,
+          "mean_us": 24.392796,
+          "serial_samples_per_second_from_mean": 40995.710372849426
+        },
+        "npu_execute": {
+          "samples": 1500,
+          "median_us": 61.3555,
+          "p95_us": 68.5881,
+          "mean_us": 60.58434733333334,
+          "serial_samples_per_second_from_mean": 16505.913557144202
+        },
+        "npu_tensor_roundtrip": {
+          "samples": 1500,
+          "median_us": 85.63650000000001,
+          "p95_us": 103.77919999999999,
+          "mean_us": 82.90692066666666,
+          "serial_samples_per_second_from_mean": 12061.719238380269
+        }
+      },
+      "cpu_threadpool_configurations": {
+        "cpu_numpy_t4": [
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libopenblas",
+            "version": "0.3.21",
+            "threading_layer": "pthreads",
+            "architecture": "armv8"
+          }
+        ],
+        "cpu_numpy_t1": [
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 1,
+            "prefix": "libopenblas",
+            "version": "0.3.21",
+            "threading_layer": "pthreads",
+            "architecture": "armv8"
+          }
+        ]
+      }
+    },
+    "32": {
+      "load_ms": 8.873318000041763,
+      "input_dims": {
+        "name": "input",
+        "dimCount": 2,
+        "dims": [
+          32,
+          64
+        ]
+      },
+      "output_dims": {
+        "name": "Add_4:0:logits",
+        "dimCount": 2,
+        "dims": [
+          32,
+          10
+        ]
+      },
+      "input_bytes": 8192,
+      "output_bytes": 1280,
+      "validation": {
+        "test_samples": 360,
+        "correct": 352,
+        "accuracy": 0.9777777777777777,
+        "numpy_prediction_agreement": 1.0,
+        "sklearn_prediction_agreement": 1.0,
+        "max_abs_logit_error": 0.03662109375,
+        "mean_abs_logit_error": 0.00613356825378206,
+        "relative_l2_logit_error": 0.0003713407831300321,
+        "prediction_disagreement_indices": []
+      },
+      "timing": {
+        "cpu_numpy_t1": {
+          "samples": 1500,
+          "median_us": 83.876,
+          "p95_us": 86.05235,
+          "mean_us": 85.235264,
+          "serial_samples_per_second_from_mean": 375431.4646107039
+        },
+        "cpu_numpy_t4": {
+          "samples": 1500,
+          "median_us": 83.21,
+          "p95_us": 85.71104999999999,
+          "mean_us": 84.27106666666667,
+          "serial_samples_per_second_from_mean": 379727.0079252191
+        },
+        "npu_execute": {
+          "samples": 1500,
+          "median_us": 60.135999999999996,
+          "p95_us": 64.00200000000001,
+          "mean_us": 56.99142866666667,
+          "serial_samples_per_second_from_mean": 561487.9421107803
+        },
+        "npu_tensor_roundtrip": {
+          "samples": 1500,
+          "median_us": 77.251,
+          "p95_us": 89.21209999999999,
+          "mean_us": 73.42379333333334,
+          "serial_samples_per_second_from_mean": 435826.0251513383
+        }
+      },
+      "cpu_threadpool_configurations": {
+        "cpu_numpy_t4": [
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libopenblas",
+            "version": "0.3.21",
+            "threading_layer": "pthreads",
+            "architecture": "armv8"
+          }
+        ],
+        "cpu_numpy_t1": [
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 1,
+            "prefix": "libopenblas",
+            "version": "0.3.21",
+            "threading_layer": "pthreads",
+            "architecture": "armv8"
+          }
+        ]
+      }
+    },
+    "128": {
+      "load_ms": 9.183448000385397,
+      "input_dims": {
+        "name": "input",
+        "dimCount": 2,
+        "dims": [
+          128,
+          64
+        ]
+      },
+      "output_dims": {
+        "name": "Add_4:0:logits",
+        "dimCount": 2,
+        "dims": [
+          128,
+          10
+        ]
+      },
+      "input_bytes": 32768,
+      "output_bytes": 5120,
+      "validation": {
+        "test_samples": 360,
+        "correct": 352,
+        "accuracy": 0.9777777777777777,
+        "numpy_prediction_agreement": 1.0,
+        "sklearn_prediction_agreement": 1.0,
+        "max_abs_logit_error": 0.03662109375,
+        "mean_abs_logit_error": 0.00613356825378206,
+        "relative_l2_logit_error": 0.0003713407831300321,
+        "prediction_disagreement_indices": []
+      },
+      "timing": {
+        "cpu_numpy_t1": {
+          "samples": 1500,
+          "median_us": 241.775,
+          "p95_us": 271.96505,
+          "mean_us": 246.852278,
+          "serial_samples_per_second_from_mean": 518528.73725556623
+        },
+        "cpu_numpy_t4": {
+          "samples": 1500,
+          "median_us": 31987.1405,
+          "p95_us": 49803.89615,
+          "mean_us": 28476.039294,
+          "serial_samples_per_second_from_mean": 4495.007141915627
+        },
+        "npu_execute": {
+          "samples": 1500,
+          "median_us": 58.709,
+          "p95_us": 62.2111,
+          "mean_us": 54.853574,
+          "serial_samples_per_second_from_mean": 2333485.1435569176
+        },
+        "npu_tensor_roundtrip": {
+          "samples": 1500,
+          "median_us": 92.0425,
+          "p95_us": 106.51249999999999,
+          "mean_us": 111.34638866666666,
+          "serial_samples_per_second_from_mean": 1149565.7967245674
+        }
+      },
+      "cpu_threadpool_configurations": {
+        "cpu_numpy_t4": [
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libopenblas",
+            "version": "0.3.21",
+            "threading_layer": "pthreads",
+            "architecture": "armv8"
+          }
+        ],
+        "cpu_numpy_t1": [
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 1,
+            "prefix": "libopenblas",
+            "version": "0.3.21",
+            "threading_layer": "pthreads",
+            "architecture": "armv8"
+          }
+        ]
+      }
+    }
+  },
+  "run_mode": 0
+}
