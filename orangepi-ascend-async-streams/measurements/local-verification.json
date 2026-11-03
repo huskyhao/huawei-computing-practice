@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "completed_windows": 19200,
+  "timing_conditions": 32,
+  "windows_per_condition": 600,
+  "independent_test_samples": 360,
+  "correct_per_policy": 352,
+  "bitwise_equal_logits_across_policies": true,
+  "independent_model_ids": 3,
+  "model_batch": 32,
+  "probe_cases_verified": 4,
+  "model_invocations_in_measured_windows": 408000
+}

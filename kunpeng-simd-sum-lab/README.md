@@ -1,5 +1,7 @@
 # 鲲鹏服务器 GCC / NEON 求和优化实测
 
+[返回合集目录](../README.md)
+
 **[技术博客](blog.md)** · **[完整结果表](measurements/table.md)** · **[官方参考资料](sources.md)** · **[公开版处理说明](PUBLICATION.md)**
 
 2026-11-02 在真实 HiSilicon TaiShan-v110 服务器上完成的单核整数求和实验。对比 O3 标量、O2/O3 自动向量化、`-mtune=tsv110` 与四路 NEON 累加。
@@ -28,8 +30,8 @@
 不需要鲲鹏服务器，在装有 Python 3 的 Windows、Linux 或 macOS 上运行：
 
 ```bash
-git clone https://github.com/huskyhao/kunpeng-simd-sum-lab.git
-cd kunpeng-simd-sum-lab
+git clone https://github.com/huskyhao/huawei-computing-practice.git
+cd huawei-computing-practice/kunpeng-simd-sum-lab
 python scripts/analyze.py
 python scripts/verify_artifacts.py
 ```

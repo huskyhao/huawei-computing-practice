@@ -1,5 +1,7 @@
 # Orange Pi AIpro 昇腾推理实测
 
+[返回合集目录](../README.md)
+
 在 Orange Pi AIpro / Ascend310B1 / CANN 8.0.0 上完成手写数字分类模型的 ONNX → OM 转换、pyACL 推理和静态 batch 性能测试。
 
 **[阅读完整技术博客](blog.md)** · **[官方参考资料](sources.md)**
@@ -20,8 +22,8 @@
 在已安装 CANN 的开发板上克隆仓库，然后执行：
 
 ```bash
-git clone https://github.com/huskyhao/orangepi-ascend-onnx-om-lab.git
-cd orangepi-ascend-onnx-om-lab
+git clone https://github.com/huskyhao/huawei-computing-practice.git
+cd huawei-computing-practice/orangepi-ascend-onnx-om-lab
 bash scripts/collect_env.sh
 bash scripts/setup.sh
 bash scripts/run.sh

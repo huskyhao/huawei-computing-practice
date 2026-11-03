@@ -1,5 +1,7 @@
 # 鲲鹏多线程计数器：伪共享、缓存行填充与原子指令实测
 
+[返回合集目录](../README.md)
+
 **[技术博客正文](blog.md)** · **[官方参考资料](sources.md)** · **[公开版说明](PUBLICATION.md)**
 
 2026-11-02，在真实 HiSilicon TaiShan-v110 / NixOS 26.05 / GCC 14.3.0 上完成实验。与 SIMD 求和实验不同，本项目研究多线程写入相邻计数器时的性能退化。
@@ -20,8 +22,8 @@
 只需要 Python 3，不需要鲲鹏硬件：
 
 ```bash
-git clone https://github.com/huskyhao/kunpeng-false-sharing-lab.git
-cd kunpeng-false-sharing-lab
+git clone https://github.com/huskyhao/huawei-computing-practice.git
+cd huawei-computing-practice/kunpeng-false-sharing-lab
 python scripts/analyze.py
 python scripts/verify_artifacts.py
 ```

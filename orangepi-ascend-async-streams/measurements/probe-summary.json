@@ -1,0 +1,32 @@
+[
+  {
+    "default_stream": true,
+    "sync_first": false,
+    "sync_ret": null,
+    "execute_async_ret": 0,
+    "synchronize_ret": 0,
+    "finite_output": true
+  },
+  {
+    "default_stream": false,
+    "sync_first": false,
+    "sync_ret": null,
+    "execute_async_ret": 0,
+    "synchronize_ret": 0,
+    "finite_output": true
+  },
+  {
+    "default_stream": true,
+    "sync_first": true,
+    "sync_ret": 0,
+    "execute_async_ret": 500002,
+    "error_summary": "NnExecute not support mix execute"
+  },
+  {
+    "default_stream": false,
+    "sync_first": true,
+    "sync_ret": 0,
+    "execute_async_ret": 500002,
+    "error_summary": "NnExecute not support mix execute"
+  }
+]

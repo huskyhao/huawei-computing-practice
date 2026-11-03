@@ -1,0 +1,12 @@
+.venv/
+tools/
+.cache/
+__pycache__/
+*.py[cod]
+models/
+logs/
+results/
+kernel_meta/
+*.om
+*.onnx
+*.npz

@@ -6,7 +6,7 @@
 
 同为八线程，128 字节间距相对紧凑布局的加速比约为 **53.17 倍**。这是高频原子计数器微基准中的布局对照，不代表应用整体可以获得相同比例的提升。
 
-实验源码、原始数据和复现步骤已公开到 [GitHub 仓库](https://github.com/huskyhao/kunpeng-false-sharing-lab)。本文同时保留 LSE 的慢批次和加长复核结果，看看哪些结论成立，哪些还不能确定。
+实验源码、原始数据和复现步骤已公开到 [合集中的项目目录](https://github.com/huskyhao/huawei-computing-practice/tree/main/kunpeng-false-sharing-lab)。本文同时保留 LSE 的慢批次和加长复核结果，看看哪些结论成立，哪些还不能确定。
 
 ## 一、不同变量，为什么仍会互相影响
 
