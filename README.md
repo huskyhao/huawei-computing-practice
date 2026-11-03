@@ -4,12 +4,12 @@
 
 ## 实验目录
 
-| 日期 | 平台 | 实验 | 正文 | 项目与复现 |
-| --- | --- | --- | --- | --- |
-| 2026-11-02 | 鲲鹏 TaiShan-v110 | GCC 自动向量化、NEON 与单核求和吞吐 | [技术博客](kunpeng-simd-sum-lab/blog.md) | [项目说明](kunpeng-simd-sum-lab/README.md) |
-| 2026-11-02 | 鲲鹏 TaiShan-v110 | 伪共享、缓存行填充、LSE 与 LL/SC 原子指令 | [技术博客](kunpeng-false-sharing-lab/blog.md) | [项目说明](kunpeng-false-sharing-lab/README.md) |
-| 2026-11-02 | 昇腾 Ascend310B1 / Orange Pi AIpro | ONNX 转 OM、pyACL 数字分类与静态 batch 测试 | [技术博客](orangepi-ascend-onnx-om-lab/blog.md) | [项目说明](orangepi-ascend-onnx-om-lab/README.md) |
-| 2026-11-03 | 昇腾 Ascend310B1 / Orange Pi AIpro | 同步/异步推理、分组等待与双 Stream | [实验报告](orangepi-ascend-async-streams/report.md) | [项目说明](orangepi-ascend-async-streams/README.md) |
+| 平台 | 实验 | 正文 | 项目与复现 |
+| --- | --- | --- | --- |
+| 鲲鹏 TaiShan-v110 | GCC 自动向量化、NEON 与单核求和吞吐 | [技术博客](kunpeng-simd-sum-lab/blog.md) | [项目说明](kunpeng-simd-sum-lab/README.md) |
+| 鲲鹏 TaiShan-v110 | 伪共享、缓存行填充、LSE 与 LL/SC 原子指令 | [技术博客](kunpeng-false-sharing-lab/blog.md) | [项目说明](kunpeng-false-sharing-lab/README.md) |
+| 昇腾 Ascend310B1 / Orange Pi AIpro | ONNX 转 OM、pyACL 数字分类与静态 batch 测试 | [技术博客](orangepi-ascend-onnx-om-lab/blog.md) | [项目说明](orangepi-ascend-onnx-om-lab/README.md) |
+| 昇腾 Ascend310B1 / Orange Pi AIpro | 同步/异步推理、分组等待与双 Stream | [实验报告](orangepi-ascend-async-streams/report.md) | [项目说明](orangepi-ascend-async-streams/README.md) |
 
 这些结果来自具体软硬件和受控微基准，各篇正文记录了计时范围、异常结果与适用边界。
 
@@ -39,14 +39,4 @@ cd huawei-computing-practice
 
 其中异步 Stream 实验保留 19,200 条完成窗口记录和四个最小诊断对照的脱敏结果，性能数值与本地完整记录一致。
 
-## 旧仓库迁移
-
-前三个项目迁移前的完整 Git 提交历史已并入本仓库。原独立仓库增加迁移说明后归档，供已有博客链接和历史查阅使用；后续维护入口统一为本仓库。
-
-| 原仓库 | 统一后的目录 |
-| --- | --- |
-| [kunpeng-simd-sum-lab](https://github.com/huskyhao/kunpeng-simd-sum-lab) | [kunpeng-simd-sum-lab/](kunpeng-simd-sum-lab/) |
-| [kunpeng-false-sharing-lab](https://github.com/huskyhao/kunpeng-false-sharing-lab) | [kunpeng-false-sharing-lab/](kunpeng-false-sharing-lab/) |
-| [orangepi-ascend-onnx-om-lab](https://github.com/huskyhao/orangepi-ascend-onnx-om-lab) | [orangepi-ascend-onnx-om-lab/](orangepi-ascend-onnx-om-lab/) |
-
-更新日期：2026-11-03。
+各实验的公开内容和迁移前的完整 Git 提交历史均集中保存在本仓库，按上述子目录访问与复现。
