@@ -1,0 +1,296 @@
+{
+  "date": "2026-11-02",
+  "timezone": "Asia/Shanghai",
+  "kernel": "6.12.111",
+  "os": {
+    "ID": "nixos",
+    "PRETTY_NAME": "NixOS 26.05 (Yarara)",
+    "VERSION_ID": "26.05"
+  },
+  "cpu": {
+    "Architecture": "aarch64",
+    "Byte Order": "Little Endian",
+    "CPU(s)": "96",
+    "Vendor ID": "HiSilicon",
+    "Model name": "TaiShan-v110",
+    "Thread(s) per core": "1",
+    "Core(s) per socket": "48",
+    "Socket(s)": "2",
+    "NUMA node(s)": "4"
+  },
+  "topology": {
+    "4": [
+      {
+        "level": "1",
+        "type": "Data",
+        "size": "64K",
+        "coherency_line_size": "64",
+        "shared_cpu_list": "4"
+      },
+      {
+        "level": "1",
+        "type": "Instruction",
+        "size": "64K",
+        "coherency_line_size": "64",
+        "shared_cpu_list": "4"
+      },
+      {
+        "level": "2",
+        "type": "Unified",
+        "size": "512K",
+        "coherency_line_size": "64",
+        "shared_cpu_list": "4"
+      },
+      {
+        "level": "3",
+        "type": "Unified",
+        "size": "49152K",
+        "coherency_line_size": "128",
+        "shared_cpu_list": "0-23"
+      }
+    ],
+    "5": [
+      {
+        "level": "1",
+        "type": "Data",
+        "size": "64K",
+        "coherency_line_size": "64",
+        "shared_cpu_list": "5"
+      },
+      {
+        "level": "1",
+        "type": "Instruction",
+        "size": "64K",
+        "coherency_line_size": "64",
+        "shared_cpu_list": "5"
+      },
+      {
+        "level": "2",
+        "type": "Unified",
+        "size": "512K",
+        "coherency_line_size": "64",
+        "shared_cpu_list": "5"
+      },
+      {
+        "level": "3",
+        "type": "Unified",
+        "size": "49152K",
+        "coherency_line_size": "128",
+        "shared_cpu_list": "0-23"
+      }
+    ],
+    "6": [
+      {
+        "level": "1",
+        "type": "Data",
+        "size": "64K",
+        "coherency_line_size": "64",
+        "shared_cpu_list": "6"
+      },
+      {
+        "level": "1",
+        "type": "Instruction",
+        "size": "64K",
+        "coherency_line_size": "64",
+        "shared_cpu_list": "6"
+      },
+      {
+        "level": "2",
+        "type": "Unified",
+        "size": "512K",
+        "coherency_line_size": "64",
+        "shared_cpu_list": "6"
+      },
+      {
+        "level": "3",
+        "type": "Unified",
+        "size": "49152K",
+        "coherency_line_size": "128",
+        "shared_cpu_list": "0-23"
+      }
+    ],
+    "7": [
+      {
+        "level": "1",
+        "type": "Data",
+        "size": "64K",
+        "coherency_line_size": "64",
+        "shared_cpu_list": "7"
+      },
+      {
+        "level": "1",
+        "type": "Instruction",
+        "size": "64K",
+        "coherency_line_size": "64",
+        "shared_cpu_list": "7"
+      },
+      {
+        "level": "2",
+        "type": "Unified",
+        "size": "512K",
+        "coherency_line_size": "64",
+        "shared_cpu_list": "7"
+      },
+      {
+        "level": "3",
+        "type": "Unified",
+        "size": "49152K",
+        "coherency_line_size": "128",
+        "shared_cpu_list": "0-23"
+      }
+    ],
+    "8": [
+      {
+        "level": "1",
+        "type": "Data",
+        "size": "64K",
+        "coherency_line_size": "64",
+        "shared_cpu_list": "8"
+      },
+      {
+        "level": "1",
+        "type": "Instruction",
+        "size": "64K",
+        "coherency_line_size": "64",
+        "shared_cpu_list": "8"
+      },
+      {
+        "level": "2",
+        "type": "Unified",
+        "size": "512K",
+        "coherency_line_size": "64",
+        "shared_cpu_list": "8"
+      },
+      {
+        "level": "3",
+        "type": "Unified",
+        "size": "49152K",
+        "coherency_line_size": "128",
+        "shared_cpu_list": "0-23"
+      }
+    ],
+    "9": [
+      {
+        "level": "1",
+        "type": "Data",
+        "size": "64K",
+        "coherency_line_size": "64",
+        "shared_cpu_list": "9"
+      },
+      {
+        "level": "1",
+        "type": "Instruction",
+        "size": "64K",
+        "coherency_line_size": "64",
+        "shared_cpu_list": "9"
+      },
+      {
+        "level": "2",
+        "type": "Unified",
+        "size": "512K",
+        "coherency_line_size": "64",
+        "shared_cpu_list": "9"
+      },
+      {
+        "level": "3",
+        "type": "Unified",
+        "size": "49152K",
+        "coherency_line_size": "128",
+        "shared_cpu_list": "0-23"
+      }
+    ],
+    "10": [
+      {
+        "level": "1",
+        "type": "Data",
+        "size": "64K",
+        "coherency_line_size": "64",
+        "shared_cpu_list": "10"
+      },
+      {
+        "level": "1",
+        "type": "Instruction",
+        "size": "64K",
+        "coherency_line_size": "64",
+        "shared_cpu_list": "10"
+      },
+      {
+        "level": "2",
+        "type": "Unified",
+        "size": "512K",
+        "coherency_line_size": "64",
+        "shared_cpu_list": "10"
+      },
+      {
+        "level": "3",
+        "type": "Unified",
+        "size": "49152K",
+        "coherency_line_size": "128",
+        "shared_cpu_list": "0-23"
+      }
+    ],
+    "11": [
+      {
+        "level": "1",
+        "type": "Data",
+        "size": "64K",
+        "coherency_line_size": "64",
+        "shared_cpu_list": "11"
+      },
+      {
+        "level": "1",
+        "type": "Instruction",
+        "size": "64K",
+        "coherency_line_size": "64",
+        "shared_cpu_list": "11"
+      },
+      {
+        "level": "2",
+        "type": "Unified",
+        "size": "512K",
+        "coherency_line_size": "64",
+        "shared_cpu_list": "11"
+      },
+      {
+        "level": "3",
+        "type": "Unified",
+        "size": "49152K",
+        "coherency_line_size": "128",
+        "shared_cpu_list": "0-23"
+      }
+    ],
+    "12": [
+      {
+        "level": "1",
+        "type": "Data",
+        "size": "64K",
+        "coherency_line_size": "64",
+        "shared_cpu_list": "12"
+      },
+      {
+        "level": "1",
+        "type": "Instruction",
+        "size": "64K",
+        "coherency_line_size": "64",
+        "shared_cpu_list": "12"
+      },
+      {
+        "level": "2",
+        "type": "Unified",
+        "size": "512K",
+        "coherency_line_size": "64",
+        "shared_cpu_list": "12"
+      },
+      {
+        "level": "3",
+        "type": "Unified",
+        "size": "49152K",
+        "coherency_line_size": "128",
+        "shared_cpu_list": "0-23"
+      }
+    ]
+  },
+  "numa_balancing": "1",
+  "thp": "always [madvise] never",
+  "collection": "allowlist; no host/user identifiers, private paths, load or vulnerability details"
+}

@@ -1,0 +1,12 @@
+SELFTEST PASS cases=60 iterations=0,1,31 layouts=5 threads=1,2,4,8
+BENCH rounds=9 iterations_per_worker=2000000 controller_cpu=12 worker_cpus=4;5;6;7;8;9;10;11; seed=9568341
+ROUND 0 PASS
+ROUND 1 PASS
+ROUND 2 PASS
+ROUND 3 PASS
+ROUND 4 PASS
+ROUND 5 PASS
+ROUND 6 PASS
+ROUND 7 PASS
+ROUND 8 PASS
+BENCH PASS samples=180 all_counters_and_cpu_checks=pass

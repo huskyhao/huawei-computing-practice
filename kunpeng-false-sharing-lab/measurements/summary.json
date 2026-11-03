@@ -1,0 +1,479 @@
+{
+  "unit": "million atomic increments per second; total across workers",
+  "samples": 360,
+  "metadata": {
+    "lse": {
+      "rounds": 9,
+      "iterations_per_worker": 2000000,
+      "controller_cpu": 12,
+      "worker_cpus": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "llsc": {
+      "rounds": 9,
+      "iterations_per_worker": 2000000,
+      "controller_cpu": 12,
+      "worker_cpus": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    }
+  },
+  "statistics": "median/min/max across all batches; no filtering",
+  "results": [
+    {
+      "atomic_mode": "lse",
+      "threads": 1,
+      "layout": "shared",
+      "rounds": 9,
+      "median_mops": 56.36627481771851,
+      "min_mops": 24.114730169432505,
+      "max_mops": 56.429571239653285,
+      "median_ms": 35.48221,
+      "max_start_skew_us": 0.0
+    },
+    {
+      "atomic_mode": "lse",
+      "threads": 1,
+      "layout": "packed8",
+      "rounds": 9,
+      "median_mops": 56.39852551694889,
+      "min_mops": 51.00332465171742,
+      "max_mops": 99.7038794779505,
+      "median_ms": 35.46192,
+      "max_start_skew_us": 0.0
+    },
+    {
+      "atomic_mode": "lse",
+      "threads": 1,
+      "layout": "stride64",
+      "rounds": 9,
+      "median_mops": 56.34464668103267,
+      "min_mops": 18.645082373507798,
+      "max_mops": 56.4236809060289,
+      "median_ms": 35.49583,
+      "max_start_skew_us": 0.0
+    },
+    {
+      "atomic_mode": "lse",
+      "threads": 1,
+      "layout": "stride128",
+      "rounds": 9,
+      "median_mops": 56.41293819454904,
+      "min_mops": 23.729490453092076,
+      "max_mops": 56.464349256844464,
+      "median_ms": 35.45286,
+      "max_start_skew_us": 0.0
+    },
+    {
+      "atomic_mode": "lse",
+      "threads": 1,
+      "layout": "stride256",
+      "rounds": 9,
+      "median_mops": 56.3469960712057,
+      "min_mops": 21.532254617618918,
+      "max_mops": 56.44415908786239,
+      "median_ms": 35.49435,
+      "max_start_skew_us": 0.0
+    },
+    {
+      "atomic_mode": "lse",
+      "threads": 2,
+      "layout": "shared",
+      "rounds": 9,
+      "median_mops": 29.448777054867563,
+      "min_mops": 29.42711007828494,
+      "max_mops": 29.47761900722769,
+      "median_ms": 135.82907,
+      "max_start_skew_us": 3.0
+    },
+    {
+      "atomic_mode": "lse",
+      "threads": 2,
+      "layout": "packed8",
+      "rounds": 9,
+      "median_mops": 29.45169991162281,
+      "min_mops": 29.445527467303318,
+      "max_mops": 29.480252100375836,
+      "median_ms": 135.81559,
+      "max_start_skew_us": 3.0
+    },
+    {
+      "atomic_mode": "lse",
+      "threads": 2,
+      "layout": "stride64",
+      "rounds": 9,
+      "median_mops": 112.81979829512362,
+      "min_mops": 96.53797912704084,
+      "max_mops": 112.90125458696629,
+      "median_ms": 35.45477,
+      "max_start_skew_us": 3.02
+    },
+    {
+      "atomic_mode": "lse",
+      "threads": 2,
+      "layout": "stride128",
+      "rounds": 9,
+      "median_mops": 112.44176570677942,
+      "min_mops": 30.274166637338567,
+      "max_mops": 112.87073450912659,
+      "median_ms": 35.57397,
+      "max_start_skew_us": 2.81
+    },
+    {
+      "atomic_mode": "lse",
+      "threads": 2,
+      "layout": "stride256",
+      "rounds": 9,
+      "median_mops": 112.75746405080626,
+      "min_mops": 39.31496426810329,
+      "max_mops": 112.8876809907023,
+      "median_ms": 35.47437,
+      "max_start_skew_us": 3.1
+    },
+    {
+      "atomic_mode": "lse",
+      "threads": 4,
+      "layout": "shared",
+      "rounds": 9,
+      "median_mops": 46.99291458456237,
+      "min_mops": 46.96013542363853,
+      "max_mops": 47.09021608346317,
+      "median_ms": 170.23843,
+      "max_start_skew_us": 3.5
+    },
+    {
+      "atomic_mode": "lse",
+      "threads": 4,
+      "layout": "packed8",
+      "rounds": 9,
+      "median_mops": 46.98777800906206,
+      "min_mops": 46.96835419070737,
+      "max_mops": 47.06833687091108,
+      "median_ms": 170.25704,
+      "max_start_skew_us": 2.78
+    },
+    {
+      "atomic_mode": "lse",
+      "threads": 4,
+      "layout": "stride64",
+      "rounds": 9,
+      "median_mops": 225.69504198774138,
+      "min_mops": 58.85539787867489,
+      "max_mops": 225.81449170145856,
+      "median_ms": 35.44606,
+      "max_start_skew_us": 7.64
+    },
+    {
+      "atomic_mode": "lse",
+      "threads": 4,
+      "layout": "stride128",
+      "rounds": 9,
+      "median_mops": 225.47253406326308,
+      "min_mops": 88.35384744007428,
+      "max_mops": 225.88456395243776,
+      "median_ms": 35.48104,
+      "max_start_skew_us": 2.78
+    },
+    {
+      "atomic_mode": "lse",
+      "threads": 4,
+      "layout": "stride256",
+      "rounds": 9,
+      "median_mops": 225.62661446418898,
+      "min_mops": 225.4082425032036,
+      "max_mops": 225.86351858094469,
+      "median_ms": 35.45681,
+      "max_start_skew_us": 2.93
+    },
+    {
+      "atomic_mode": "lse",
+      "threads": 8,
+      "layout": "shared",
+      "rounds": 9,
+      "median_mops": 46.878074084643345,
+      "min_mops": 46.79195250944364,
+      "max_mops": 47.01560236272208,
+      "median_ms": 341.31095,
+      "max_start_skew_us": 3.63
+    },
+    {
+      "atomic_mode": "lse",
+      "threads": 8,
+      "layout": "packed8",
+      "rounds": 9,
+      "median_mops": 46.136613685013515,
+      "min_mops": 46.10593322270215,
+      "max_mops": 46.168194251984794,
+      "median_ms": 346.79615,
+      "max_start_skew_us": 3.27
+    },
+    {
+      "atomic_mode": "lse",
+      "threads": 8,
+      "layout": "stride64",
+      "rounds": 9,
+      "median_mops": 359.78899275047667,
+      "min_mops": 114.88915314989796,
+      "max_mops": 451.6482337731258,
+      "median_ms": 44.47051,
+      "max_start_skew_us": 2.85
+    },
+    {
+      "atomic_mode": "lse",
+      "threads": 8,
+      "layout": "stride128",
+      "rounds": 9,
+      "median_mops": 451.0158709666144,
+      "min_mops": 120.95326290325629,
+      "max_mops": 451.6774311749457,
+      "median_ms": 35.47547,
+      "max_start_skew_us": 2.8
+    },
+    {
+      "atomic_mode": "lse",
+      "threads": 8,
+      "layout": "stride256",
+      "rounds": 9,
+      "median_mops": 451.4746573166265,
+      "min_mops": 450.90783246632213,
+      "max_mops": 451.77180667216135,
+      "median_ms": 35.43942,
+      "max_start_skew_us": 2.94
+    },
+    {
+      "atomic_mode": "llsc",
+      "threads": 1,
+      "layout": "shared",
+      "rounds": 9,
+      "median_mops": 162.1665450417579,
+      "min_mops": 161.33442933188994,
+      "max_mops": 162.27891526281883,
+      "median_ms": 12.333,
+      "max_start_skew_us": 0.0
+    },
+    {
+      "atomic_mode": "llsc",
+      "threads": 1,
+      "layout": "packed8",
+      "rounds": 9,
+      "median_mops": 162.1101554717446,
+      "min_mops": 161.29331431147514,
+      "max_mops": 162.2849724115547,
+      "median_ms": 12.33729,
+      "max_start_skew_us": 0.0
+    },
+    {
+      "atomic_mode": "llsc",
+      "threads": 1,
+      "layout": "stride64",
+      "rounds": 9,
+      "median_mops": 162.20652783950638,
+      "min_mops": 161.82748542743494,
+      "max_mops": 162.28813284257402,
+      "median_ms": 12.32996,
+      "max_start_skew_us": 0.0
+    },
+    {
+      "atomic_mode": "llsc",
+      "threads": 1,
+      "layout": "stride128",
+      "rounds": 9,
+      "median_mops": 162.2371858986683,
+      "min_mops": 161.87241054728253,
+      "max_mops": 162.2907666291234,
+      "median_ms": 12.32763,
+      "max_start_skew_us": 0.0
+    },
+    {
+      "atomic_mode": "llsc",
+      "threads": 1,
+      "layout": "stride256",
+      "rounds": 9,
+      "median_mops": 162.15431739923935,
+      "min_mops": 161.14775879725758,
+      "max_mops": 162.2918201676799,
+      "median_ms": 12.33393,
+      "max_start_skew_us": 0.0
+    },
+    {
+      "atomic_mode": "llsc",
+      "threads": 2,
+      "layout": "shared",
+      "rounds": 9,
+      "median_mops": 93.15902968349452,
+      "min_mops": 90.30488962597747,
+      "max_mops": 100.71066480620499,
+      "median_ms": 42.93733,
+      "max_start_skew_us": 3.01
+    },
+    {
+      "atomic_mode": "llsc",
+      "threads": 2,
+      "layout": "packed8",
+      "rounds": 9,
+      "median_mops": 93.08564484382323,
+      "min_mops": 87.33592036885453,
+      "max_mops": 100.83801431798965,
+      "median_ms": 42.97118,
+      "max_start_skew_us": 2.89
+    },
+    {
+      "atomic_mode": "llsc",
+      "threads": 2,
+      "layout": "stride64",
+      "rounds": 9,
+      "median_mops": 323.8258076215642,
+      "min_mops": 323.02245652117733,
+      "max_mops": 324.4196335518029,
+      "median_ms": 12.35232,
+      "max_start_skew_us": 3.0
+    },
+    {
+      "atomic_mode": "llsc",
+      "threads": 2,
+      "layout": "stride128",
+      "rounds": 9,
+      "median_mops": 324.26236392127237,
+      "min_mops": 323.56229140343527,
+      "max_mops": 324.5228094913186,
+      "median_ms": 12.33569,
+      "max_start_skew_us": 2.97
+    },
+    {
+      "atomic_mode": "llsc",
+      "threads": 2,
+      "layout": "stride256",
+      "rounds": 9,
+      "median_mops": 323.6109807677994,
+      "min_mops": 322.3788983668285,
+      "max_mops": 324.54993038403995,
+      "median_ms": 12.36052,
+      "max_start_skew_us": 2.89
+    },
+    {
+      "atomic_mode": "llsc",
+      "threads": 4,
+      "layout": "shared",
+      "rounds": 9,
+      "median_mops": 44.95929834720627,
+      "min_mops": 42.22697240472632,
+      "max_mops": 47.27988200832646,
+      "median_ms": 177.93872,
+      "max_start_skew_us": 2.81
+    },
+    {
+      "atomic_mode": "llsc",
+      "threads": 4,
+      "layout": "packed8",
+      "rounds": 9,
+      "median_mops": 44.07228096475765,
+      "min_mops": 42.15772067537933,
+      "max_mops": 49.582171044607094,
+      "median_ms": 181.51999,
+      "max_start_skew_us": 2.9
+    },
+    {
+      "atomic_mode": "llsc",
+      "threads": 4,
+      "layout": "stride64",
+      "rounds": 9,
+      "median_mops": 648.3129276839345,
+      "min_mops": 634.3985148730767,
+      "max_mops": 649.1003874317937,
+      "median_ms": 12.33972,
+      "max_start_skew_us": 2.93
+    },
+    {
+      "atomic_mode": "llsc",
+      "threads": 4,
+      "layout": "stride128",
+      "rounds": 9,
+      "median_mops": 648.2540896729882,
+      "min_mops": 642.6616474791998,
+      "max_mops": 648.8487395707704,
+      "median_ms": 12.34084,
+      "max_start_skew_us": 2.82
+    },
+    {
+      "atomic_mode": "llsc",
+      "threads": 4,
+      "layout": "stride256",
+      "rounds": 9,
+      "median_mops": 646.8221627145832,
+      "min_mops": 644.8565436011692,
+      "max_mops": 649.0703689640512,
+      "median_ms": 12.36816,
+      "max_start_skew_us": 2.96
+    },
+    {
+      "atomic_mode": "llsc",
+      "threads": 8,
+      "layout": "shared",
+      "rounds": 9,
+      "median_mops": 24.222588144787128,
+      "min_mops": 23.989867639503778,
+      "max_mops": 24.541949439135927,
+      "median_ms": 660.54048,
+      "max_start_skew_us": 3.04
+    },
+    {
+      "atomic_mode": "llsc",
+      "threads": 8,
+      "layout": "packed8",
+      "rounds": 9,
+      "median_mops": 24.38412073748615,
+      "min_mops": 24.245616949347074,
+      "max_mops": 24.44873040875481,
+      "median_ms": 656.16473,
+      "max_start_skew_us": 2.88
+    },
+    {
+      "atomic_mode": "llsc",
+      "threads": 8,
+      "layout": "stride64",
+      "rounds": 9,
+      "median_mops": 1296.5880286027318,
+      "min_mops": 1284.9682010525496,
+      "max_mops": 1298.1828685297755,
+      "median_ms": 12.34008,
+      "max_start_skew_us": 2.77
+    },
+    {
+      "atomic_mode": "llsc",
+      "threads": 8,
+      "layout": "stride128",
+      "rounds": 9,
+      "median_mops": 1296.4104824510584,
+      "min_mops": 1289.4199866545032,
+      "max_mops": 1298.3261330329872,
+      "median_ms": 12.34177,
+      "max_start_skew_us": 2.74
+    },
+    {
+      "atomic_mode": "llsc",
+      "threads": 8,
+      "layout": "stride256",
+      "rounds": 9,
+      "median_mops": 1296.6184999906804,
+      "min_mops": 1291.318145279748,
+      "max_mops": 1298.1544300736946,
+      "median_ms": 12.33979,
+      "max_start_skew_us": 3.59
+    }
+  ]
+}
