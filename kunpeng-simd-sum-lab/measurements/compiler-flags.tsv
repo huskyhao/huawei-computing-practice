@@ -1,0 +1,6 @@
+variant	options
+scalar	-std=c11 -Wall -Wextra -Werror -fno-lto -march=armv8-a -O3 -mtune=generic -fno-tree-vectorize -DSUM_NAME=sum_scalar
+auto_o2	-std=c11 -Wall -Wextra -Werror -fno-lto -march=armv8-a -O2 -mtune=generic -DSUM_NAME=sum_o2
+auto_o3	-std=c11 -Wall -Wextra -Werror -fno-lto -march=armv8-a -O3 -mtune=generic -DSUM_NAME=sum_o3
+auto_tuned	-std=c11 -Wall -Wextra -Werror -fno-lto -march=armv8-a -O3 -mtune=tsv110 -DSUM_NAME=sum_tuned
+neon4	-std=c11 -Wall -Wextra -Werror -fno-lto -march=armv8-a -O3 -mtune=tsv110 (intrinsics)

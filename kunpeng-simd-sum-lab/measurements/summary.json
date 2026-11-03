@@ -1,0 +1,129 @@
+{
+  "unit": "GiB/s = logical input bytes / elapsed seconds / 2**30",
+  "samples": 110,
+  "cpu": 4,
+  "rounds": 11,
+  "statistics": "median, min, max across batch means; no filtering",
+  "results": [
+    {
+      "bytes": 262144,
+      "variant": "scalar",
+      "rounds": 11,
+      "reps_per_batch": 3921,
+      "expected_sum": "140743882251355",
+      "median_us": 50.644743688000005,
+      "median_gib_s": 4.820651,
+      "min_gib_s": 4.817954,
+      "max_gib_s": 4.825127,
+      "speedup_vs_scalar": 1.0
+    },
+    {
+      "bytes": 262144,
+      "variant": "auto_o2",
+      "rounds": 11,
+      "reps_per_batch": 3935,
+      "expected_sum": "140743882251355",
+      "median_us": 50.652846251,
+      "median_gib_s": 4.81988,
+      "min_gib_s": 4.805258,
+      "max_gib_s": 4.825443,
+      "speedup_vs_scalar": 0.9998400373601939
+    },
+    {
+      "bytes": 262144,
+      "variant": "auto_o3",
+      "rounds": 11,
+      "reps_per_batch": 7824,
+      "expected_sum": "140743882251355",
+      "median_us": 25.488710378,
+      "median_gib_s": 9.578383,
+      "min_gib_s": 9.543606,
+      "max_gib_s": 9.619909,
+      "speedup_vs_scalar": 1.9869480619824869
+    },
+    {
+      "bytes": 262144,
+      "variant": "auto_tuned",
+      "rounds": 11,
+      "reps_per_batch": 7846,
+      "expected_sum": "140743882251355",
+      "median_us": 25.475757074,
+      "median_gib_s": 9.583253,
+      "min_gib_s": 9.553423,
+      "max_gib_s": 9.620015,
+      "speedup_vs_scalar": 1.9879583378382468
+    },
+    {
+      "bytes": 262144,
+      "variant": "neon4",
+      "rounds": 11,
+      "reps_per_batch": 21482,
+      "expected_sum": "140743882251355",
+      "median_us": 9.156573876,
+      "median_gib_s": 26.662879,
+      "min_gib_s": 26.623656,
+      "max_gib_s": 26.74189,
+      "speedup_vs_scalar": 5.530970903947305
+    },
+    {
+      "bytes": 268435456,
+      "variant": "scalar",
+      "rounds": 11,
+      "reps_per_batch": 2,
+      "expected_sum": "144101530060828022",
+      "median_us": 69583.98500137299,
+      "median_gib_s": 3.592781,
+      "min_gib_s": 3.571226,
+      "max_gib_s": 3.621811,
+      "speedup_vs_scalar": 1.0
+    },
+    {
+      "bytes": 268435456,
+      "variant": "auto_o2",
+      "rounds": 11,
+      "reps_per_batch": 2,
+      "expected_sum": "144101530060828022",
+      "median_us": 70061.59500088,
+      "median_gib_s": 3.568289,
+      "min_gib_s": 3.407335,
+      "max_gib_s": 3.62615,
+      "speedup_vs_scalar": 0.993182998481536
+    },
+    {
+      "bytes": 268435456,
+      "variant": "auto_o3",
+      "rounds": 11,
+      "reps_per_batch": 5,
+      "expected_sum": "144101530060828022",
+      "median_us": 37942.02399876701,
+      "median_gib_s": 6.589,
+      "min_gib_s": 6.543738,
+      "max_gib_s": 6.59527,
+      "speedup_vs_scalar": 1.8339555371014011
+    },
+    {
+      "bytes": 268435456,
+      "variant": "auto_tuned",
+      "rounds": 11,
+      "reps_per_batch": 5,
+      "expected_sum": "144101530060828022",
+      "median_us": 37855.202000355,
+      "median_gib_s": 6.604112,
+      "min_gib_s": 6.530305,
+      "max_gib_s": 6.637391,
+      "speedup_vs_scalar": 1.838161767059662
+    },
+    {
+      "bytes": 268435456,
+      "variant": "neon4",
+      "rounds": 11,
+      "reps_per_batch": 7,
+      "expected_sum": "144101530060828022",
+      "median_us": 28815.93285669,
+      "median_gib_s": 8.675756,
+      "min_gib_s": 8.51471,
+      "max_gib_s": 8.756309,
+      "speedup_vs_scalar": 2.4147746785583637
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+Public extract of the measured environment; identifiers, deployment hashes,
+uptime, live memory usage, load, swap usage and vulnerability details omitted.
+Experiment date: 2026-11-02 (Asia/Shanghai)
+OS: NixOS 26.05 (Yarara)
+Kernel: Linux 6.12.111
+Architecture: aarch64; little endian
+CPU vendor: HiSilicon
+CPU model: TaiShan-v110
+CPU count: 96; sockets: 2; cores/socket: 48; threads/core: 1
+NUMA nodes: 4
+NUMA node0 CPUs: 0-23
+NUMA node1 CPUs: 24-47
+NUMA node2 CPUs: 48-71
+NUMA node3 CPUs: 72-95
+CPU features: fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma dcpop asimddp asimdfhm
+CPU 4 L1D: 64 KiB; line size: 64 bytes; private
+CPU 4 L1I: 64 KiB; line size: 64 bytes; private
+CPU 4 L2: 512 KiB; line size: 64 bytes; private
+CPU 4 L3: 48 MiB; line size: 128 bytes; shared CPUs: 0-23
+System memory (rounded as reported): 188 GiB
+GCC: 14.3.0
+Python: 3.12.10
+RUN CPU=4 ROUNDS=11 TARGET_SECONDS=0.2
+THP policy: always [madvise] never
+Automatic NUMA balancing: 1
+CPU governor/frequency files: no values exposed in collected output
