@@ -1,0 +1,246 @@
+{
+  "configuration": {
+    "rounds": 5,
+    "repeats": 1200,
+    "warmup": 20,
+    "seed": 20261104
+  },
+  "total_timed_requests": 24000,
+  "batch": 32,
+  "policy_statistics": {
+    "reuse_all": {
+      "total_us": {
+        "count": 6000,
+        "mean": 101.34439716666667,
+        "median": 104.1885,
+        "p95": 115.19105,
+        "min": 76.772,
+        "max": 337.297
+      },
+      "stage_mean_us": {
+        "model_prepare_us": 0.0,
+        "memory_prepare_us": 0.0,
+        "dataset_prepare_us": 0.0,
+        "input_copy_us": 11.4684375,
+        "execute_us": 66.26533533333334,
+        "output_read_us": 17.334633,
+        "dataset_release_us": 0.0,
+        "memory_release_us": 0.0,
+        "model_release_us": 0.0,
+        "python_gap_us": 6.275991333333331
+      },
+      "round_mean_us": [
+        101.69550583333333,
+        101.57604416666666,
+        101.8072075,
+        101.50088833333334,
+        100.14234
+      ],
+      "relative_to_reuse_mean": 1.0
+    },
+    "recreate_dataset": {
+      "total_us": {
+        "count": 6000,
+        "mean": 129.50125433333332,
+        "median": 131.21,
+        "p95": 146.96110000000002,
+        "min": 104.376,
+        "max": 380.547
+      },
+      "stage_mean_us": {
+        "model_prepare_us": 0.0,
+        "memory_prepare_us": 0.0,
+        "dataset_prepare_us": 11.294234833333334,
+        "input_copy_us": 11.1298395,
+        "execute_us": 69.46246583333334,
+        "output_read_us": 18.476116,
+        "dataset_release_us": 9.931441833333333,
+        "memory_release_us": 0.0,
+        "model_release_us": 0.0,
+        "python_gap_us": 9.20715633333333
+      },
+      "round_mean_us": [
+        130.5037525,
+        129.97614666666666,
+        129.94597333333334,
+        129.7831225,
+        127.29727666666666
+      ],
+      "relative_to_reuse_mean": 1.2778333874773669
+    },
+    "reallocate_io": {
+      "total_us": {
+        "count": 6000,
+        "mean": 184.3991595,
+        "median": 183.961,
+        "p95": 208.4631,
+        "min": 157.294,
+        "max": 409.714
+      },
+      "stage_mean_us": {
+        "model_prepare_us": 0.0,
+        "memory_prepare_us": 19.301473333333334,
+        "dataset_prepare_us": 10.527922,
+        "input_copy_us": 9.939468833333333,
+        "execute_us": 75.91895416666667,
+        "output_read_us": 20.129121166666668,
+        "dataset_release_us": 10.4155775,
+        "memory_release_us": 26.127804,
+        "model_release_us": 0.0,
+        "python_gap_us": 12.038838500000002
+      },
+      "round_mean_us": [
+        183.17241666666666,
+        191.47702416666667,
+        183.20111500000002,
+        183.16953916666668,
+        180.9757025
+      ],
+      "relative_to_reuse_mean": 1.8195298867558019
+    },
+    "reload_model": {
+      "total_us": {
+        "count": 6000,
+        "mean": 10442.5494485,
+        "median": 10424.793,
+        "p95": 10750.775,
+        "min": 9940.443,
+        "max": 15304.806
+      },
+      "stage_mean_us": {
+        "model_prepare_us": 8927.336088833334,
+        "memory_prepare_us": 31.6991615,
+        "dataset_prepare_us": 21.513767666666666,
+        "input_copy_us": 16.798701833333332,
+        "execute_us": 211.7436125,
+        "output_read_us": 59.480198333333334,
+        "dataset_release_us": 20.349700333333335,
+        "memory_release_us": 44.395459,
+        "model_release_us": 1070.1189985,
+        "python_gap_us": 39.11375999999963
+      },
+      "round_mean_us": [
+        10482.227841666667,
+        10402.503591666667,
+        10388.202385,
+        10489.390455833332,
+        10450.422968333334
+      ],
+      "relative_to_reuse_mean": 103.04022462461964
+    }
+  },
+  "validation": {
+    "reuse_all": {
+      "samples": 360,
+      "correct": 352,
+      "cpu_prediction_agreement": 1.0,
+      "max_abs_vs_reuse": 0.0
+    },
+    "recreate_dataset": {
+      "samples": 360,
+      "correct": 352,
+      "cpu_prediction_agreement": 1.0,
+      "max_abs_vs_reuse": 0.0
+    },
+    "reallocate_io": {
+      "samples": 360,
+      "correct": 352,
+      "cpu_prediction_agreement": 1.0,
+      "max_abs_vs_reuse": 0.0
+    },
+    "reload_model": {
+      "samples": 360,
+      "correct": 352,
+      "cpu_prediction_agreement": 1.0,
+      "max_abs_vs_reuse": 0.0
+    }
+  },
+  "timer_pair_median_us": 0.291,
+  "startup": {
+    "runtime_init_us": {
+      "count": 12,
+      "mean": 1011039.4385833333,
+      "median": 1009953.5430000001,
+      "p95": 1024529.9920000001,
+      "min": 993004.4,
+      "max": 1025352.748
+    },
+    "resource_prepare_us": {
+      "count": 12,
+      "mean": 157943.16016666667,
+      "median": 157869.435,
+      "p95": 159884.6453,
+      "min": 155912.784,
+      "max": 160470.678
+    },
+    "first_request_us": {
+      "count": 12,
+      "mean": 308.8929166666667,
+      "median": 305.421,
+      "p95": 329.6439,
+      "min": 296.649,
+      "max": 338.192
+    },
+    "first_execute_us": {
+      "count": 12,
+      "mean": 215.03916666666666,
+      "median": 208.503,
+      "p95": 235.98555,
+      "min": 203.732,
+      "max": 243.399
+    },
+    "next_30_request_mean_us": {
+      "count": 12,
+      "mean": 99.58283611111112,
+      "median": 96.37901666666667,
+      "p95": 109.85367166666668,
+      "min": 93.1192,
+      "max": 110.64580000000002
+    },
+    "next_30_request_median_us": {
+      "count": 12,
+      "mean": 100.6585,
+      "median": 98.35050000000001,
+      "p95": 111.92229999999998,
+      "min": 94.72,
+      "max": 114.1685
+    },
+    "resource_release_us": {
+      "count": 12,
+      "mean": 1242.0218333333332,
+      "median": 1238.0165,
+      "p95": 1333.4807999999998,
+      "min": 1168.391,
+      "max": 1350.852
+    },
+    "runtime_release_us": {
+      "count": 12,
+      "mean": 6515.3515,
+      "median": 6357.365,
+      "p95": 8754.7631,
+      "min": 3771.195,
+      "max": 8760.24
+    },
+    "internal_session_us": {
+      "count": 12,
+      "mean": 1182023.7395,
+      "median": 1181037.9555,
+      "p95": 1195495.8627,
+      "min": 1164035.945,
+      "max": 1196240.335
+    },
+    "process_wall_us": {
+      "count": 12,
+      "mean": 4872165.568666667,
+      "median": 4865891.2895,
+      "p95": 4914309.646199999,
+      "min": 4844100.42,
+      "max": 4957332.602
+    }
+  },
+  "startup_processes": 12,
+  "sha256": {
+    "digits_b32.om": "2004eec2746d88a02a49d76cc8a3c24a1c9017b80b55d5e8720d46e0e8637061",
+    "test_data.npz": "c3ddfc42846a516789b294426374d5dbfed3d8ed6e4b50f8a190657197414165"
+  }
+}

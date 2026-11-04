@@ -11,6 +11,7 @@
 | 鲲鹏 TaiShan-v110 | CPU 亲和性、NUMA 页位置与本地/远端访存 | [技术博客](kunpeng-numa-locality/blog.md) | [项目说明](kunpeng-numa-locality/README.md) |
 | 昇腾 Ascend310B1 / Orange Pi AIpro | ONNX 转 OM、pyACL 数字分类与静态 batch 测试 | [技术博客](orangepi-ascend-onnx-om-lab/blog.md) | [项目说明](orangepi-ascend-onnx-om-lab/README.md) |
 | 昇腾 Ascend310B1 / Orange Pi AIpro | 同步/异步推理、分组等待与双 Stream | [实验报告](orangepi-ascend-async-streams/report.md) | [项目说明](orangepi-ascend-async-streams/README.md) |
+| 昇腾 Ascend310B1 / Orange Pi AIpro | 模型常驻、Dataset 与 I/O 内存复用、独立进程启动 | [技术博客](orangepi-ascend-resource-reuse/blog.md) | [项目说明](orangepi-ascend-resource-reuse/README.md) |
 
 这些结果来自具体软硬件和受控微基准，各篇正文记录了计时范围、异常结果与适用边界。
 
@@ -23,7 +24,8 @@ huawei-computing-practice/
 ├── kunpeng-false-sharing-lab/
 ├── kunpeng-numa-locality/
 ├── orangepi-ascend-onnx-om-lab/
-└── orangepi-ascend-async-streams/
+├── orangepi-ascend-async-streams/
+└── orangepi-ascend-resource-reuse/
 ```
 
 各项目都是普通目录，一次克隆即可获取完整公开内容：
@@ -40,5 +42,7 @@ cd huawei-computing-practice
 公开目录包含正文、配图、源码、复现步骤及脱敏后的数值结果。连接配置、凭证、个人目录、完整机器环境日志和板端模型二进制不作为本次新增公开材料上传；原始实验材料保留在本地及相应实验设备。各项目的公开版说明列出了具体范围。
 
 其中异步 Stream 实验保留 19,200 条完成窗口记录和四个最小诊断对照的脱敏结果，性能数值与本地完整记录一致。
+
+资源复用实验保留 24,000 条逐请求计时和 12 个独立进程的阶段记录，附可在普通电脑上运行的统计复核脚本。
 
 各实验的公开内容和迁移前的完整 Git 提交历史均集中保存在本仓库，按上述子目录访问与复现。

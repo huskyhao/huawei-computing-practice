@@ -1,0 +1,80 @@
+{
+  "configuration": {
+    "rounds": 5,
+    "repeats": 1200,
+    "warmup": 20,
+    "seed": 20261104
+  },
+  "python": "3.10.12",
+  "numpy": "1.24.0",
+  "soc": "Ascend310B1",
+  "run_mode": 0,
+  "batch": 32,
+  "input_bytes": 8192,
+  "output_bytes": 1280,
+  "sha256": {
+    "digits_b32.om": "2004eec2746d88a02a49d76cc8a3c24a1c9017b80b55d5e8720d46e0e8637061",
+    "test_data.npz": "c3ddfc42846a516789b294426374d5dbfed3d8ed6e4b50f8a190657197414165"
+  },
+  "validation": {
+    "reuse_all": {
+      "samples": 360,
+      "correct": 352,
+      "cpu_prediction_agreement": 1.0,
+      "max_abs_vs_reuse": 0.0
+    },
+    "recreate_dataset": {
+      "samples": 360,
+      "correct": 352,
+      "cpu_prediction_agreement": 1.0,
+      "max_abs_vs_reuse": 0.0
+    },
+    "reallocate_io": {
+      "samples": 360,
+      "correct": 352,
+      "cpu_prediction_agreement": 1.0,
+      "max_abs_vs_reuse": 0.0
+    },
+    "reload_model": {
+      "samples": 360,
+      "correct": 352,
+      "cpu_prediction_agreement": 1.0,
+      "max_abs_vs_reuse": 0.0
+    }
+  },
+  "round_order": [
+    [
+      "reuse_all",
+      "reallocate_io",
+      "reload_model",
+      "recreate_dataset"
+    ],
+    [
+      "reload_model",
+      "reuse_all",
+      "reallocate_io",
+      "recreate_dataset"
+    ],
+    [
+      "recreate_dataset",
+      "reallocate_io",
+      "reload_model",
+      "reuse_all"
+    ],
+    [
+      "reallocate_io",
+      "reuse_all",
+      "recreate_dataset",
+      "reload_model"
+    ],
+    [
+      "reload_model",
+      "reuse_all",
+      "recreate_dataset",
+      "reallocate_io"
+    ]
+  ],
+  "rows": 24000,
+  "timer_pair_median_us": 0.291,
+  "timed_outputs_verified": 24000
+}

@@ -1,0 +1,36 @@
+{
+  "hardware": "Orange Pi AIpro / Ascend310B1",
+  "architecture": "aarch64",
+  "logical_cpus": 4,
+  "system_memory": "about 23 GiB",
+  "os": "Ubuntu 22.04.3 LTS",
+  "kernel": "Linux 5.10.0+",
+  "cann": "8.0.0",
+  "npu_smi_version": "23.0.0",
+  "python": "3.10.12",
+  "numpy": "1.24.0",
+  "run_mode": 0,
+  "preflight": {
+    "npu_temperature_c": 48,
+    "aicore_utilization_percent": 0,
+    "load_average_1m": 17.24,
+    "vmstat_interval_cpu_idle_percent": [
+      98,
+      98
+    ]
+  },
+  "postflight": {
+    "npu_temperature_c": 49,
+    "aicore_utilization_percent": 0,
+    "load_average_1m": 17.52,
+    "vmstat_interval_cpu_idle_percent": [
+      98,
+      97
+    ]
+  },
+  "alarm_before_and_after": {
+    "code": "80E3A203",
+    "message": "The function of obtaining the current is abnormal"
+  },
+  "note": "Short CPU/NPU snapshots are not continuous profiling. No power/energy estimate."
+}
