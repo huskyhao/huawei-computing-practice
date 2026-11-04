@@ -8,6 +8,7 @@
 | --- | --- | --- | --- |
 | 鲲鹏 TaiShan-v110 | GCC 自动向量化、NEON 与单核求和吞吐 | [技术博客](kunpeng-simd-sum-lab/blog.md) | [项目说明](kunpeng-simd-sum-lab/README.md) |
 | 鲲鹏 TaiShan-v110 | 伪共享、缓存行填充、LSE 与 LL/SC 原子指令 | [技术博客](kunpeng-false-sharing-lab/blog.md) | [项目说明](kunpeng-false-sharing-lab/README.md) |
+| 鲲鹏 TaiShan-v110 | CPU 亲和性、NUMA 页位置与本地/远端访存 | [技术博客](kunpeng-numa-locality/blog.md) | [项目说明](kunpeng-numa-locality/README.md) |
 | 昇腾 Ascend310B1 / Orange Pi AIpro | ONNX 转 OM、pyACL 数字分类与静态 batch 测试 | [技术博客](orangepi-ascend-onnx-om-lab/blog.md) | [项目说明](orangepi-ascend-onnx-om-lab/README.md) |
 | 昇腾 Ascend310B1 / Orange Pi AIpro | 同步/异步推理、分组等待与双 Stream | [实验报告](orangepi-ascend-async-streams/report.md) | [项目说明](orangepi-ascend-async-streams/README.md) |
 
@@ -20,6 +21,7 @@ huawei-computing-practice/
 ├── README.md
 ├── kunpeng-simd-sum-lab/
 ├── kunpeng-false-sharing-lab/
+├── kunpeng-numa-locality/
 ├── orangepi-ascend-onnx-om-lab/
 └── orangepi-ascend-async-streams/
 ```

@@ -1,0 +1,1 @@
+-std=c11 -O3 -march=armv8-a -mtune=tsv110 -fno-lto -Wall -Wextra -Werror

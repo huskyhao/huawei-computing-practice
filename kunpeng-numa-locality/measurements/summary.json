@@ -1,0 +1,135 @@
+{
+  "samples": 144,
+  "page_checks": 16,
+  "statistics": "median/min/max of batch means; no filtering",
+  "results": [
+    {
+      "cpu": 4,
+      "cpu_node": 0,
+      "memory_node": 0,
+      "distance": 10,
+      "chase": {
+        "median": 136.026225,
+        "min": 135.818558,
+        "max": 138.08763
+      },
+      "scan": {
+        "median": 8.056543,
+        "min": 7.980509,
+        "max": 8.220756
+      }
+    },
+    {
+      "cpu": 4,
+      "cpu_node": 0,
+      "memory_node": 1,
+      "distance": 16,
+      "chase": {
+        "median": 147.661328,
+        "min": 147.526498,
+        "max": 147.897825
+      },
+      "scan": {
+        "median": 7.31793,
+        "min": 7.218378,
+        "max": 7.374462
+      }
+    },
+    {
+      "cpu": 4,
+      "cpu_node": 0,
+      "memory_node": 2,
+      "distance": 32,
+      "chase": {
+        "median": 245.43139,
+        "min": 245.279317,
+        "max": 246.793699
+      },
+      "scan": {
+        "median": 3.503922,
+        "min": 3.419925,
+        "max": 3.704128
+      }
+    },
+    {
+      "cpu": 4,
+      "cpu_node": 0,
+      "memory_node": 3,
+      "distance": 33,
+      "chase": {
+        "median": 264.973989,
+        "min": 264.637637,
+        "max": 265.184259
+      },
+      "scan": {
+        "median": 3.307267,
+        "min": 3.244021,
+        "max": 3.42132
+      }
+    },
+    {
+      "cpu": 52,
+      "cpu_node": 2,
+      "memory_node": 0,
+      "distance": 32,
+      "chase": {
+        "median": 240.836201,
+        "min": 240.561938,
+        "max": 241.363068
+      },
+      "scan": {
+        "median": 3.853654,
+        "min": 3.754419,
+        "max": 4.043802
+      }
+    },
+    {
+      "cpu": 52,
+      "cpu_node": 2,
+      "memory_node": 1,
+      "distance": 25,
+      "chase": {
+        "median": 259.552441,
+        "min": 259.053974,
+        "max": 263.471956
+      },
+      "scan": {
+        "median": 3.559276,
+        "min": 3.449826,
+        "max": 4.040688
+      }
+    },
+    {
+      "cpu": 52,
+      "cpu_node": 2,
+      "memory_node": 2,
+      "distance": 10,
+      "chase": {
+        "median": 142.591085,
+        "min": 142.367458,
+        "max": 144.139824
+      },
+      "scan": {
+        "median": 6.651614,
+        "min": 6.584381,
+        "max": 6.699301
+      }
+    },
+    {
+      "cpu": 52,
+      "cpu_node": 2,
+      "memory_node": 3,
+      "distance": 16,
+      "chase": {
+        "median": 155.678711,
+        "min": 155.403171,
+        "max": 155.735607
+      },
+      "scan": {
+        "median": 5.943417,
+        "min": 5.912534,
+        "max": 6.060254
+      }
+    }
+  ]
+}

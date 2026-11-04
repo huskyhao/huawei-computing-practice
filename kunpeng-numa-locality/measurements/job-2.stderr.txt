@@ -1,0 +1,4 @@
+CORRECTNESS PASS cpu=52 memory_node=0 bytes=268435456 slots=2097152 expected_sum=2199053664256
+CALIBRATE pattern=scan reps=2
+CALIBRATE pattern=chase reps=1
+BENCH PASS cpu=52 memory_node=0 samples=18 all_checks=pass
